@@ -1,0 +1,11 @@
+@keyframes openModalFromBottom {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0%); 
+    }
+  }
+.drawer-open-class{
+    animation: openModalFromBottom 0.5s;
+}

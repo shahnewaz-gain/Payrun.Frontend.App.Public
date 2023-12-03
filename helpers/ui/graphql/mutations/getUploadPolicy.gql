@@ -1,0 +1,9 @@
+query GET_UPLOAD_POLICY($queryData: UploadPolicyQueryData) {
+  getUploadPolicy(queryData: $queryData) {
+    url
+    policy_data {
+      name
+      value
+    }
+  }
+}

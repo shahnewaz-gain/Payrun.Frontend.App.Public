@@ -1,0 +1,28 @@
+
+.grid .w-64 .grid-cols-7{
+    button{
+        color:black !important;
+    }
+      
+}
+.grid .w-64 .grid-cols-4{
+background: white;
+button{
+    color:black !important;
+}
+}
+.selected-date-class {
+    position: relative;
+    color: #333; 
+  }
+  .selected-date-class::after {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 4px; 
+    background-color: blue; 
+    position: absolute;
+    bottom: 0px; 
+    left: 50%;
+    border-radius: 50%;
+  }

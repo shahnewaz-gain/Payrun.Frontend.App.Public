@@ -1,0 +1,110 @@
+.rbc-month-view{
+  border-radius: 5px !important;
+}
+.rbc-row-content {
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    z-index: 4;
+    .rbc-row {
+      .rbc-current {
+        button {
+          font-weight: 300;
+          color: white !important;
+          background: blue !important;
+          border-radius: 50%;
+          padding-left: 1%;
+          padding-right: 1%;
+        }
+      }
+      .rbc-date-cell {
+        display: flex;
+        justify-content: center;
+        .rbc-button-link{
+          font-weight: 400;
+          font-size: .8em;
+          color:gray;
+        }
+      }
+      .rbc-row-segment {
+        .rbc-event {
+          background: inherit;
+        }
+      }
+    }
+  }
+  .rbc-month-row {
+   .rbc-day-bg,.rbc-off-range-bg{
+      background: #FFF; 
+    }
+    .rbc-today {
+      background: transparent;
+    }
+  }
+ .rbc-month-header{
+  .rbc-header{
+    padding:20px 3px;
+    background: #FBFAFF;
+    font-weight: 300;
+    font-size: medium;
+    color:gray;
+  }
+ }
+  .approved-bg {
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 400;
+    padding-top: .2rem;
+    padding-bottom:.2rem;
+    font-size: small;
+    color: #22b671;
+    background: repeating-linear-gradient(
+      110deg,
+      rgba(34, 182, 113, 0.2) 10px,
+      rgba(34, 182, 113, 0.2) 20px,
+      rgba(157, 239, 198, 0.2) 20px,
+      rgba(157, 239, 198, 0.2) 30px
+    );
+  }
+  .pending-bg {
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 400;
+    padding-top: .2rem;
+    padding-bottom:.2rem;
+    font-size: small;
+    color: orange;
+    background: repeating-linear-gradient(
+      110deg,
+      rgba(255, 255, 0, 0.2) 10px,
+      rgba(255, 255, 0, 0.2) 20px,
+      rgba(204, 204, 0, 0.2) 20px,
+      rgba(204, 204, 0, 0.2) 30px
+    );
+  }
+  .rejected-bg {
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 400;
+    padding-top: .2rem;
+    padding-bottom:.2rem;
+    font-size: small;
+    color: red;
+    background: repeating-linear-gradient(
+      110deg,
+      rgba(255, 0, 0, 0.2) 10px,
+      rgba(255, 0, 0, 0.2) 20px,
+      rgba(255, 102, 102, 0.2) 20px,
+      rgba(255, 102, 102, 0.2) 30px
+    );
+  }
+  .off-day-bg {
+    color:#348ceb;
+    background: rgba(52, 140, 235, 0.2);
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 400;
+    padding-top: .2rem;
+    padding-bottom:.2rem;
+    font-size: small;
+  }

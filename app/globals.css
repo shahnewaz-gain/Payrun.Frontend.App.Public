@@ -1,27 +1,162 @@
+/* font family  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  h1 {
+    @apply text-32 font-semibold;
+  }
+  h2 {
+    @apply text-2xl font-semibold;
+  }
+  h3 {
+    @apply text-xl font-medium;
+  }
+  h4 {
+    @apply text-lg font-medium;
+  }
+  h5 {
+    @apply text-base font-medium;
+  }
+  h6 {
+    @apply text-sm font-medium;
+  }
+  p {
+    @apply text-sm font-normal;
+  }
+  span {
+    @apply text-xs font-normal;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  .stripedBtn {
+    text-decoration: none;
+    padding: 10px 25px;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    transition: 0.4s;
+    background-image: linear-gradient(
+      131deg,
+      #daf2dc80 25%,
+      #e3f2fd 25%,
+      #e3f2fd 50%,
+      #daf2dc80 50%,
+      #daf2dc80 75%,
+      #e3f2fd 75%,
+      #e3f2fd 100%
+    );
+    background-size: 53px 60px;
+  }
+
+  .stripedBtn:hover {
+    animation: stripes 4s linear infinite;
+  }
+
+  @keyframes stripes {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 160px 0;
+    }
+  }
+  /* Hide scrollbar for Chrome, Safari, Opera, IE, Edge, and Firefox */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.hide-chart-line ul {
+  display: none !important;
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0px !important;
+}
+
+.ant-picker-presets > ul > li {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.ant-picker-presets > ul > li:hover {
+  background-color: #edecfe !important;
+  color: #2c67ff !important;
+  font-size: 14px !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  font-weight: 400 !important;
+  line-height: 21px !important;
+}
+
+.filter-range-popup-panel > .ant-picker-panel {
+  visibility: hidden !important;
+}
+
+.first-letter-capitalize::first-letter {
+  text-transform: capitalize !important;
+}
+
+.hide-ant-header .ant-picker-header {
+  display: none !important;
+}
+
+.inline-datepicker-popup > .ant-picker-panel-container {
+  box-shadow: none !important;
+}
+
+.ant-picker-panels > *:nth-child(2) {
+  display: none;
+}
+.ant-picker-panels > *:first-child button.ant-picker-header-next-btn {
+  visibility: visible !important;
+}
+
+.ant-picker-panels > *:first-child button.ant-picker-header-super-next-btn {
+  visibility: visible !important;
+}
+
+.custom-inline-date-range-picke-popup {
+  padding: 0 0;
+}
+
+.custom-inline-date-range-picke-popup .ant-picker-panel-container {
+  box-shadow: none !important;
+  background-color: white !important;
+}
+
+.single-date-picker .ant-picker-input input {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.single-date-picker .ant-picker-input .ant-picker-suffix {
+  font-size: 16px;
+}
+
+.custom-ok-button .ant-btn-primary {
+  background-color: #3b82f6 !important;
+  border-color: #3b82f6 !important;
 }

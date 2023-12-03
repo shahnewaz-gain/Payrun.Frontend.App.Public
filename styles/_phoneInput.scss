@@ -1,0 +1,20 @@
+.react-tel-input {
+  position: relative !important;
+  .form-control {
+    padding-left:30px !important ;
+    background: transparent !important;
+    width: 100% !important;
+    border: 1px solid #d8e0ed;
+  }
+  .flag-dropdown {
+    background: none !important;
+    border-left: 1px solid #d8e0ed !important;
+    border-top: 1px solid #d8e0ed !important;
+    border-right: none !important;
+    border-bottom: 1px solid #d8e0ed !important;
+    .selected-flag .arrow{
+      position: absolute !important;
+      left:60px;
+    }
+  }
+}
